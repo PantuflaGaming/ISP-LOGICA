@@ -1,5 +1,6 @@
 # E) Obtener la liquidacion  del sueldo de un empleado. La empresa bonifica sobre el sueldo basico (SB) la antiguedad del empleado con un 1.2% por año
-# Además paga el presentismo en un monto fijo (MP).
+# Además paga el presentismo en un monto fijo (MP). Entre los descuentos, aporte jubilatorio con un 11% del sueldo basico, Obra social con un 3% del basico
+# y el aporte gremial con 1% del basico. Además, el empleador paga $40.00 por hijo y por esposa $30.00.
 
 # INFO: Calcular la liquidacion del sueldo
 # Datos: Haberes - Sueldo Basico, 1.2%, MP, 30.00 y 40.00
@@ -24,8 +25,8 @@ salarioFamiliar = (30 * esposas) + (40 * hijos) #ln salarioFamiliar
 # <=== Descuentos ===>
 
 aporteJubilatorio = sueldoBasico * 0.11 #ln aporteJubilatorio
-obraSocial = sueldoBasico * 0.3 #ln obraSocial
-aporteGremial = sueldoBasico * 0.1 #ln aporteGremial
+obraSocial = sueldoBasico * 0.03 #ln obraSocial
+aporteGremial = sueldoBasico * 0.01 #ln aporteGremial
 
 # <=== Estrategia ===>
 
