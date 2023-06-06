@@ -14,12 +14,13 @@
 nombre = str(input("¿Cual es su nombre?: "))  # ls Nombre
 dni = int(input("¿Cual es tu DNI?: ")) #ln dni
 sueldoBasico = int(input("¿Cuando es el sueldo basico?: ")) #ln sueldoBasico
+anosAntiguedad = int(input("¿Cuantos años tiene de antiguedad?: "))
 hijos = int(input("¿Cuanto es la cantidad de hijos que posee: ")) #ln hijos
-esposas = int(input("¿Cuanto es la cantidad de esposas que posee: ")) #ln esposas
+esposas = int(input("Ingrese [1 si posee esposa y [0] si no posee esposa: ")) #ln esposas
 
-# <=== Aberes ===>
+# <=== haberes ===>
 presentismo = sueldoBasico * (8.33 / 100) #ln presentismo
-antiguedad = (sueldoBasico * (1.2 / 100)) / 12 #ln antiguedad
+antiguedad = (sueldoBasico * (1.2 / 100) * anosAntiguedad#ln antiguedad
 salarioFamiliar = (30 * esposas) + (40 * hijos) #ln salarioFamiliar
 
 # <=== Descuentos ===>
@@ -35,19 +36,20 @@ totalLiquidar = (antiguedad + salarioFamiliar + sueldoBasico + presentismo) - (a
 # <=== ESCRIBIR ===>
 print("<=== DATOS ===> \n"
 f" Empleado: {nombre}\n"
-f"   DNI: {dni}\n"
+f"  DNI: {dni}\n"
  "\n" * 2,
-f"Basico: {sueldoBasico}\n"
-f"Antiguedad: {antiguedad}\n"
-f"Presentismo: {presentismo}\n"
-f"Salario Familiar {salarioFamiliar}\n"
+f"Haberes \n"
+f"  Sueldo Basico: {sueldoBasico}\n"
+f"  Antiguedad: {antiguedad}\n"
+f"  Presentismo: {presentismo}\n"
+f"  Salario Familiar {salarioFamiliar}\n"
  "\n" * 2,
  "Descuentos \n"
-f"Aporte jubilatorio: {aporteJubilatorio}\n"
-f"obra Social: {obraSocial}\n"
-f"Aporte Gremial: {aporteGremial}\n"
+f"  Aporte jubilatorio: {aporteJubilatorio}\n"
+f"  obra Social: {obraSocial}\n"
+f"  Aporte Gremial: {aporteGremial}\n"
 "\n" * 2,
-f"Liquido a cobrar: {totalLiquidar}"
+f"  Liquido a cobrar: {totalLiquidar}"
 )
 
 
