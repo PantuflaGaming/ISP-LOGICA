@@ -14,12 +14,14 @@
 nombre = str(input("¿Cual es su nombre?: "))  # ls Nombre
 dni = int(input("¿Cual es tu DNI?: ")) #ln dni
 sueldoBasico = int(input("¿Cuando es el sueldo basico?: ")) #ln sueldoBasico
+anosAntiguedad = int(input("¿Cuantos años de antiguedad tienes?: ")) #ln anosAntiguedad
 hijos = int(input("¿Cuanto es la cantidad de hijos que posee: ")) #ln hijos
-esposas = int(input("¿Cuanto es la cantidad de esposas que posee: ")) #ln esposas
+esposas = int(input("Ingrese 1 - Si posee esposa o 0- Si no posee esposa: ")) #ln esposas
+
 
 # <=== Aberes ===>
 presentismo = sueldoBasico * (8.33 / 100) #ln presentismo
-antiguedad = (sueldoBasico * (1.2 / 100)) / 12 #ln antiguedad
+antiguedad = (sueldoBasico * (1.2 / 100) * anosAntiguedad) / 12 #ln antiguedad
 salarioFamiliar = (30 * esposas) + (40 * hijos) #ln salarioFamiliar
 
 # <=== Descuentos ===>
