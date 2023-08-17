@@ -21,7 +21,7 @@ esposas = int(input("Ingrese [1 si posee esposa y [0] si no posee esposa: ")) #l
 
 # <=== haberes ===>
 presentismo = sueldoBasico * (8.33 / 100) #ln presentismo
-antiguedad = (sueldoBasico * (1.2 / 100) * anosAntiguedad#ln antiguedad
+antiguedad = (sueldoBasico * (1.2 / 100) * anosAntiguedad)#ln antiguedad
 salarioFamiliar = (30 * esposas) + (40 * hijos) #ln salarioFamiliar
 
 # <=== Descuentos ===>
