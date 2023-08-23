@@ -1,0 +1,33 @@
+# Tenemos que sacar el puntaje total del jugador en una carrera
+# Se entregan 3 fichas segun el puesto (1,2,3)
+# Ficha roja **3 + 2*Ficha Azul - Ficha Amarilla**2
+
+print("Bienvenido al sistema de puntajes\n")
+cantidadJ = int(input("Ingrese la cantidad de jugadores\n"))
+jugadores = []
+
+for i in range(0, cantidadJ):
+
+    jugador = str(input(f"Ingrese el nombre del jugador {i + 1}\n"))
+    jugadores.append(jugador)
+
+print(f"Tenemos un total de {cantidadJ} registrados y ellos son: {jugadores}")
+
+input("Presione enter para continuar...")
+print("\n" * 20)
+
+eleccion = int(input(f"Elige del 1 a {cantidadJ} para saber su puntaje final.\n"))
+
+print(f"Seleccionaste a {jugadores[eleccion-1]}")
+
+input("Presione enter para continuar...")
+print("\n" * 20)
+
+fRojas = int(input(f"Cuantas fichas rojas gano {jugadores[eleccion-1]}\n"))
+fAzules = int(input(f"Cuantas fichas azules gano {jugadores[eleccion-1]}\n"))
+fAmarillas = int(input(f"Cuantas fichas amarillas gano {jugadores[eleccion-1]}\n"))
+
+tPuntos = (fRojas**3 + (fAzules*2)) - fAmarillas**2 
+print(f"{jugadores[eleccion-1]} logro hacer un total de {tPuntos} de puntos")
+
+
